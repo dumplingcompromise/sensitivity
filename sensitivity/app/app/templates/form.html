@@ -1,0 +1,81 @@
+{% extends "templates/public_template.html" %}
+
+{% block title %}Compare Turn Times{% endblock %}
+
+{% block main %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Compare Turn Times</h1>
+            <hr>
+            <form action="/form" method="POST">
+                <h2>Baseline Turn Time</h2>
+                <div class="form-group">
+                    <label>End to End Turn Time</label>
+                    <input type="text" class="form-control" id="end_to_end" name="end_to_end" placeholder="Days">
+                </div>
+
+                <div class="form-group">
+                    <label>Label Turn Time</label>
+                    <input type="text" class="form-control" id="label" name="label" placeholder="Days">
+                </div>
+
+                <div class="form-group">
+                    <label>Customer Origination Turn Time</label>
+                    <input type="text" class="form-control" id="co_tt" name="co_tt" placeholder="Days">
+                </div>
+                <div class="form-group">
+                    <label>CRT Customer Turn Time</label>
+                    <input type="text" class="form-control" id="crt_cust_response_tt" name="crt_cust_response_tt" placeholder="Days">
+                </div>
+
+                <div class="form-group">
+                    <label>Job Creation Turn Time</label>
+                    <input type="text" class="form-control" id="job_creation_tt" name="job_creation_tt" placeholder="Days">
+                </div>
+                <div class="form-group">
+                    <label>DMG Turn Time</label>
+                    <input type="text" class="form-control" id="dmg_tt" name="dmg_tt" placeholder="Days">
+                </div>
+
+
+                <br><h2>Proposed Turn Time</h2><br />
+                <div class="form-group">
+                    <label>End to End Turn Time Proposed</label>
+                    <input type="text" class="form-control" id="end_to_end_new" name="end_to_end_new" placeholder="Days">
+                </div>
+
+                <div class="form-group">
+                    <label>Label Turn Time Proposed</label>
+                    <input type="text" class="form-control" id="label_new" name="label_new" placeholder="Days">
+                </div>
+
+                <div class="form-group">
+                    <label>Customer Origination Turn Time Proposed</label>
+                    <input type="text" class="form-control" id="co_tt_new" name="co_tt_new" placeholder="Days">
+                </div>
+                <div class="form-group">
+                    <label>CRT Customer Turn Time Proposed</label>
+                    <input type="text" class="form-control" id="crt_cust_response_tt_new" name="crt_cust_response_tt_new" placeholder="Days">
+                </div>
+
+                <div class="form-group">
+                    <label>Proposed Job Creation Turn Time</label>
+                    <input type="text" class="form-control" id="job_creation_tt_new" name="job_creation_tt_new" placeholder="Days">
+                </div>
+                <div class="form-group">
+                    <label>Proposed DMG Turn Time</label>
+                    <input type="text" class="form-control" id="dmg_tt_new" name="dmg_tt_new" placeholder="Days">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Enter</button>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
